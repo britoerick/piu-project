@@ -11,6 +11,7 @@
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   border-radius: .0rem;
+  margin-top: 1rem;
 
 }
 
@@ -70,25 +71,46 @@
   text-align: center;
 }
 
-#btnBack {
-  background-color: #01759c;
-  text-align: left;
+#colMdCardImg {
+  margin-top: 0.8rem;
 }
 
-
-.zoom {
+#card-img01, #card-img02, #card-img03, #card-img04, #card-img05, 
+  #card-img06, #card-img07, #card-img08, #card-img09, #card-img10, #card-img11 {
 	overflow: hidden;
 }
 
-.zoom img {
+#card-img01 img, #card-img02 img, #card-img03 img, #card-img04 img, #card-img05 img, #card-img06 img,
+  #card-img07 img, #card-img08 img, #card-img09 img, #card-img10 img, #card-img11 img {
 	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
-.zoom:hover img {
+#card-img01:hover img, #card-img02:hover img, #card-img03:hover img, #card-img04:hover img,
+  #card-img05:hover img, #card-img06:hover img, #card-img07:hover img, #card-img08:hover img,
+    #card-img09:hover img, #card-img09:hover img, #card-img10:hover img, #card-img11:hover img {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
+
+
+/*
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  width: 80px;
+  height: 80px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 300px;
+  height: 300px;
+}
+
+*/
