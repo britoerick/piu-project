@@ -2,191 +2,246 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Este site é um projeto de conclusão da matéria 'Projeto de Interface do Usuário' do PPgTI-UFRN">
     <meta name="author" content="Erick Brito, Edilson Lobo">
+    <meta name="version" content="beta">
     <title>GPRO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="css/myStyle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Fonte Awesome-->
     <link href="fontawesome-free-5.11.2/css/all.css" rel="stylesheet">
 
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-light justify-content-between fixed-top">
-        <a class="navbar-brand-img" href="index.html" >
-            <img src="img/icon.png" width="30" height="30" alt="">
-        </a>
-        <a class="navbar-brand" href="index.html" >GESTÃO DE PROCESSOS ONLINE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsHome" aria-controls="navbarsHome" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsHome">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link3</a>
-            </li>
-          </ul>
+  <header class="header fixed-top">
+    <div class="collapse" id="navbarHeader">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-info text-justify">Missão</h4>
+                <p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui urna, auctor in massa nec, bibendum commodo neque. Duis bibendum ligula a finibus viverra.</p>
+            <h4 class="text-info text-justify">Visão</h4>
+                <p class="text-muted text-justify">Vivamus feugiat pretium sem eu fermentum. Pellentesque rutrum dictum est in mollis. Aliquam eget finibus nibh.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-info">Links Úteis</h4>
+            <ul class="list-unstyled">
+                <li><a href="http://www.rn.gov.br/" class="text-muted" target="_blank">Portal do Governo do RN</a></li>
+                <li><a href="http://control.rn.gov.br/" class="text-muted" target="_blank">Controladoria Geral do RN</a></li>
+                <li><a href="http://cotic.rn.gov.br/" class="text-muted" target="_blank">Tecnologia da Informação e Comunicação</a></li>
+                <li><a href="http://www.pge.rn.gov.br/" class="text-muted" target="_blank">Procuradoria Geral do Estado</a></li>
+                <li><a href="http://www.caern.rn.gov.br/" class="text-muted" target="_blank">Companhia de Águas e Esgotos</a></li>
+                <li><a href="http://central.rn.gov.br/" class="text-muted" target="_blank">Central do Cidadão</a></li>
+            </ul>
+            </div>
         </div>
-      </nav>
-    </header>
+        </div>
+    </div>
+    <div class="navbar navbar-dark" id="navbar">
+        <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <!--<img src="img/icon2.png" width="20" height="20" class="mr-2">-->
+            <strong>GPRO</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+  </header>
+  <body>
+    
 
 <main role="main">
 
-  <section class="jumbotron text-center">
-        <div class="col-md-12">
-            <img src="img/img-gpro.png" class="img-fluid" alt="Responsive image">
+      <section class="jumbotron jumbotron-fluid text-center" id="jumbotronIMG">
+        <div class="container">
+          <img src="img/img-gpro3.png" class="img-fluid" alt="Responsive image">    
         </div>
-  </section>
+      </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4">
           <div class="card mb-4 shadow-sm" id="card-img">
             <a href="" img data-toggle="modal" data-target="#cardModal01">
               <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
               <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
                 </div>
-              </a>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4">
           <div class="card mb-4 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal02">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
               <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
               <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
                 </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4">
           <div class="card mb-4 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal03">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
               <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
               <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
                 </div>
+              </div>
             </a>
           </div>
         </div>
-        <div class="col-md-3 text-center">
-          <div class="card md-3 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal04">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="card mb-3 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal05">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="card mb-3 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal06">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <div class="card mb-3 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal07">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
-            </a>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-3">
           <div class="card mb-4 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal08">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
               <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
               <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
                 </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="card mb-4 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal09">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="card mb-4 shadow-sm" id="card-img">
-             <a href="" img data-toggle="modal" data-target="#cardModal10">
-              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
-              <div class="middle-card">
-                  <div class="text-card">
-                    <i class="fas fa-users"></i>
-                    Teste
-                  </div>
-                </div>
+              </div>
             </a>
           </div>
         </div>        
+        <div class="col-md-3">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>  
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>     
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card-img">
+            <a href="" img data-toggle="modal" data-target="#cardModal01">
+              <img src="img/img-teste.png" class="img-fluid" alt="Responsive image" id="card-img">
+              <div class="middle-card">
+                <div class="text-card">
+                  <i class="fas fa-users"></i>
+                  Teste
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </main>
+
 
 <!-- Modal -->
 
@@ -265,233 +320,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="cardModal04" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal05" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal06" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal07" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal08" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal09" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardModal10" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" >Titulo Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            Cras justo odio
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-
-<!-- Footer -->
-
-<footer class="container py-2">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img src="img/icon.png" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title></title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></img>
-        <small class="d-block mb-3 text-muted">© Todos os direitos reservados.</small>
-        <small class="d-block mb-4 text-muted font-weight-bold">Mapa do Site</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+<footer class="text-muted">
+  <div class="container">
+    <p>&copy; Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
