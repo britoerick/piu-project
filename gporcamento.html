@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Este site é um projeto de conclusão da matéria 'Projeto de Interface do Usuário' do PPgTI-UFRN">
+    <meta name="author" content="Erick Brito, Edilson Lobo">
+    <meta name="version" content="beta">
+    <link rel="icon" type="image/png" href="img/icon3.png" />
+    <title>GPRO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Fonte Awesome-->
+    <link href="fontawesome-free-5.11.2/css/all.css" rel="stylesheet">
+
+  </head>
+  <header class="header fixed-top">
+    <div class="collapse" id="navbarHeader">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-info text-justify">Missão</h4>
+                <p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui urna, auctor in massa nec, bibendum commodo neque. Duis bibendum ligula a finibus viverra.</p>
+            <h4 class="text-info text-justify">Visão</h4>
+                <p class="text-muted text-justify">Vivamus feugiat pretium sem eu fermentum. Pellentesque rutrum dictum est in mollis. Aliquam eget finibus nibh.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-info">Links Úteis</h4>
+            <ul class="list-unstyled">
+                <li><a href="http://www.rn.gov.br/" class="text-muted" target="_blank">Portal do Governo do RN</a></li>
+                <li><a href="http://control.rn.gov.br/" class="text-muted" target="_blank">Controladoria Geral do RN</a></li>
+                <li><a href="http://cotic.rn.gov.br/" class="text-muted" target="_blank">Tecnologia da Informação e Comunicação</a></li>
+                <li><a href="http://www.pge.rn.gov.br/" class="text-muted" target="_blank">Procuradoria Geral do Estado</a></li>
+                <li><a href="http://www.caern.rn.gov.br/" class="text-muted" target="_blank">Companhia de Águas e Esgotos</a></li>
+                <li><a href="http://central.rn.gov.br/" class="text-muted" target="_blank">Central do Cidadão</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark" id="navbar">
+        <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <!--<img src="img/icon2.png" width="20" height="20" class="mr-2">-->
+            <strong>GPRO</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+  </header>
+  <body>
+    
+
+<main role="main">
+
+      <section class="jumbotron jumbotron-fluid text-center" id="jumbotronIMG">
+        <div class="container">
+          <img src="img/img-gpro3.png" class="img-fluid" alt="Responsive image">    
+        </div>
+      </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-12 shadow-sm" id="card-img01">
+            <div class="card">
+                <div class="card-header text-center">
+                    Featured
+                </div>
+                <div class="zoom">
+                        <img src="img/fluxogramas/AVALIACAO_DO_PPA.png" class="img-responsive">
+                    </div>
+                    
+                <div class="card-body">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p>&copy; Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+</html>
