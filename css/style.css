@@ -96,6 +96,26 @@
 	transform: scale(1.1);
 }
 
+a {
+  color: #01759c;
+}
+
+.btn-link {
+  color: #01759c;
+  text-align: left;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #01759c;
+  border-color: #01759c;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #005875;
+  border-color: #005875;
+}
 
 
 /*
